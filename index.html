@@ -75,7 +75,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/11/27/index/">security</a>
+      <a class="article-title" href="/2019/11/27/index/">Segurança usando NODE</a>
     </h1>
   
 
@@ -83,7 +83,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Segue um tutorial simples e rápido de como criar um blog e hospedar no GitHub de graça:</p>
+        <p>Segue algumas bibliotecas úteis para garantir a segurança de sua aplicação NODE.</p>
 <h2 id="Seguranca-no-NODE"><a href="#Seguranca-no-NODE" class="headerlink" title="Segurança no NODE"></a>Segurança no NODE</h2><h3 id="Express-brute"><a href="#Express-brute" class="headerlink" title="Express-brute"></a>Express-brute</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn add express-brute express-brute-redis</span><br></pre></td></tr></table></figure>
 
 <p>ferramenta que limita requisições dentro de uma rota especifica. Fieto principalmente para rotas de autenticação, impedindo o usuário de ficar tentando usar usuários e senhas aleatórios até conseguir.<br>Incremental, ou seja, vai incrementando o tempo de bloqueio do usuário a medida que vai aumentando o número de tentativas de login fracassadas.<br>Instalando:</p>
@@ -102,7 +102,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/27/index/" data-id="ck3hbw1xy0002tkpt9a7xcm58" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/27/index/" data-id="ck3hcv8q70000h4pt1n3rbrw5" class="article-share-link">Share</a>
       
       
     </footer>
@@ -148,10 +148,19 @@
 
 <h3 id="Fazendo-deploy-de-seu-blog"><a href="#Fazendo-deploy-de-seu-blog" class="headerlink" title="Fazendo deploy de seu blog"></a>Fazendo deploy de seu blog</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
+<h3 id="Adicionando-um-estilo"><a href="#Adicionando-um-estilo" class="headerlink" title="Adicionando um estilo"></a>Adicionando um estilo</h3><p>Escolha um estilo em <a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="noopener">https://github.com/hexojs/hexo/wiki/Themes</a></p>
+<p>Estou usando o Dark-Tech<br>Demo: <a href="http://hijiangtao.github.io/dark-tech/" target="_blank" rel="noopener">http://hijiangtao.github.io/dark-tech/</a></p>
+<p>Instalando:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> henriqueholz.github.io</span><br><span class="line">$ git <span class="built_in">clone</span> https://github.com/hijiangtao/dark-tech.git themes/dark-tech</span><br></pre></td></tr></table></figure>
+
+<p>Adicionando informações sobre o tema, abra o arquivo _config.yml e adicione&gt;</p>
+<p><del>~ _config.yml ~</del></p>
+<h1 id="Extensions"><a href="#Extensions" class="headerlink" title="Extensions"></a>Extensions</h1><h2 id="Plugins-http-hexo-io-plugins"><a href="#Plugins-http-hexo-io-plugins" class="headerlink" title="Plugins: http://hexo.io/plugins/"></a>Plugins: <a href="http://hexo.io/plugins/" target="_blank" rel="noopener">http://hexo.io/plugins/</a></h2><h2 id="Themes-http-hexo-io-themes"><a href="#Themes-http-hexo-io-themes" class="headerlink" title="Themes: http://hexo.io/themes/"></a>Themes: <a href="http://hexo.io/themes/" target="_blank" rel="noopener">http://hexo.io/themes/</a></h2><p>theme: <nome_do_tema></p>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/25/hello-world/" data-id="ck3hbw1xo0000tkptbxqi95w3" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/25/hello-world/" data-id="ck3hcv8qu0001h4pt5cd09ykc" class="article-share-link">Share</a>
       
       
     </footer>
@@ -192,7 +201,7 @@
       <ul>
         
           <li>
-            <a href="/2019/11/27/index/">security</a>
+            <a href="/2019/11/27/index/">Segurança usando NODE</a>
           </li>
         
           <li>
