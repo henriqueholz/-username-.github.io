@@ -61,6 +61,57 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-index" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/11/27/index/" class="article-date">
+  <time datetime="2019-11-27T11:21:06.000Z" itemprop="datePublished">2019-11-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/11/27/index/">security</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Segue um tutorial simples e rápido de como criar um blog e hospedar no GitHub de graça:</p>
+<h2 id="Seguranca-no-NODE"><a href="#Seguranca-no-NODE" class="headerlink" title="Segurança no NODE"></a>Segurança no NODE</h2><h3 id="Express-brute"><a href="#Express-brute" class="headerlink" title="Express-brute"></a>Express-brute</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn add express-brute express-brute-redis</span><br></pre></td></tr></table></figure>
+
+<p>ferramenta que limita requisições dentro de uma rota especifica. Fieto principalmente para rotas de autenticação, impedindo o usuário de ficar tentando usar usuários e senhas aleatórios até conseguir.<br>Incremental, ou seja, vai incrementando o tempo de bloqueio do usuário a medida que vai aumentando o número de tentativas de login fracassadas.<br>Instalando:</p>
+<p>o express-brute-redis vai servir para armazenar no bando de dados NoSQL redis o número de tentativas de cada usuário.<br>Usado como middleware nas rotas.</p>
+<h3 id="helmet"><a href="#helmet" class="headerlink" title="helmet"></a>helmet</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn add helmet</span><br></pre></td></tr></table></figure>
+
+<p>midlleware do express que adicona varios tipos de configuracoes nos headers das nossas respostas para habilitar alguns tipos de protecao como por exemplo cross-site scripting e outras injeções cross-site.</p>
+<p>Exemplos de proteção: Impede o usuário de rodar scripts em cima de nossa aplicação, impede de usar nossa aplicação em um iframe, entre outros.</p>
+<h3 id="express-rate-limit"><a href="#express-rate-limit" class="headerlink" title="express-rate-limit"></a>express-rate-limit</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ yarn add express-rate-limit redis</span><br></pre></td></tr></table></figure>
+
+<p>parecido com o brute, porem utilizado em todas as paginas da aplicação.<br>Impede um usuário de fazer farias requisições simultaneas em determinada rota da API com inteções maliciosas como por exemplo derrubar a aplicação. O rate-limit limita o número de requisições possíveis.<br>Precisa de uma conexão mais direta com o redis.</p>
+<h3 id="Cors"><a href="#Cors" class="headerlink" title="Cors"></a>Cors</h3><p>Usado somente para front end. Bloqueia outras aplicações front end de fazer requisições AJAX à sua aplicação.</p>
+<h3 id="Github"><a href="#Github" class="headerlink" title="Github"></a>Github</h3><p>Ficar atento aos avisos de segurança do github. Habilitando em settings, data services, marcar Allow GitHub to perform read-only analysis of this repository e marcar Security Alerts.<br>Depois na aba “Security” marcar Automated security fixes. Ali o github faz pull requests para acertar seu código.</p>
+<h3 id="Greenkeeper"><a href="#Greenkeeper" class="headerlink" title="Greenkeeper"></a>Greenkeeper</h3><p>Atualizar automaticamente o número das versões das bibliotecas usadas. Também entra como pull request no GitHub, porém é necessário testes CI para verificar se esta funcionando.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/11/27/index/" data-id="ck3hbw1xy0002tkpt9a7xcm58" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/11/25/hello-world/" class="article-date">
@@ -100,7 +151,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/11/25/hello-world/" data-id="ck3h831oz0000dkpthyti4e3p" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/11/25/hello-world/" data-id="ck3hbw1xo0000tkptbxqi95w3" class="article-share-link">Share</a>
       
       
     </footer>
@@ -139,6 +190,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2019/11/27/index/">security</a>
+          </li>
         
           <li>
             <a href="/2019/11/25/hello-world/">Criando um blog com Hexo e Github</a>
